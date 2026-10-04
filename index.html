@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>SmartLearn — Learn Today. Build Tomorrow.</title>
+    <meta
+      name="description"
+      content="SmartLearn is a student-focused technology learning platform offering practical, beginner-friendly training in programming, databases, data science, AI/ML and more."
+    />
+    <meta name="author" content="SmartLearn" />
+    <meta name="keywords" content="SmartLearn, programming, Python, data science, machine learning, web development, SQL, Java, C, C++, MongoDB, cloud computing, Power BI, student training, technology courses" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SmartLearn — Learn Today. Build Tomorrow." />
+    <meta
+      property="og:description"
+      content="SmartLearn helps students build practical technology skills through structured learning, hands-on practice and industry-oriented training."
+    />
+    <meta property="og:image" content="https://images.pexels.com/photos/5530437/pexels-photo-5530437.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" />
+    <meta property="og:url" content="https://smartlearn.example.com" />
+    <meta property="og:site_name" content="SmartLearn" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SmartLearn — Learn Today. Build Tomorrow." />
+    <meta
+      name="twitter:description"
+      content="SmartLearn helps students build practical technology skills through structured learning, hands-on practice and industry-oriented training."
+    />
+    <meta name="twitter:image" content="https://images.pexels.com/photos/5530437/pexels-photo-5530437.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- ============================== NAVBAR ============================== -->
+    <header id="navbar" class="navbar">
+      <nav class="nav-container" aria-label="Primary navigation">
+        <a href="#home" class="nav-logo" aria-label="SmartLearn home">
+          <span class="nav-logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 2L26 8L14 14L2 8L14 2Z" fill="currentColor"/>
+              <path d="M5 11.5V18C5 18 8 21 14 21C20 21 23 18 23 18V11.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M26 8V15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="nav-logo-text">Smart<span class="accent">Learn</span></span>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#courses" class="nav-link">Courses</a></li>
+          <li><a href="#why" class="nav-link">Why SmartLearn</a></li>
+          <li><a href="#certificate" class="nav-link">Certificate</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <a href="#courses" class="btn btn-primary nav-cta">Explore Courses</a>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ============================== HERO ============================== -->
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <span class="badge">LEARN TODAY <span class="badge-divider">|</span> BUILD TOMORROW.</span>
+            <h1 class="hero-title">Learn Skills.<br /><span class="gradient-text">Build Your Future.</span></h1>
+            <p class="hero-text">
+              SmartLearn helps students build practical technology skills through structured learning,
+              hands-on practice and industry-oriented training.
+            </p>
+            <div class="hero-actions">
+              <a href="#courses" class="btn btn-primary btn-lg">Explore Courses</a>
+              <a href="#contact" class="btn btn-outline btn-lg">Join Our Community</a>
+            </div>
+            <div class="hero-trust">
+              <div class="hero-trust-item">
+                <strong>12+</strong>
+                <span>Courses</span>
+              </div>
+              <div class="hero-trust-divider" aria-hidden="true"></div>
+              <div class="hero-trust-item">
+                <strong>Hands-on</strong>
+                <span>Projects</span>
+              </div>
+              <div class="hero-trust-divider" aria-hidden="true"></div>
+              <div class="hero-trust-item">
+                <strong>Free</strong>
+                <span>Webinars</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" data-delay="150">
+            <div class="hero-image-frame">
+              <img
+                src="https://images.pexels.com/photos/5530437/pexels-photo-5530437.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                alt="Students learning technology and programming on computers"
+                loading="eager"
+                width="940"
+                height="650"
+              />
+            </div>
+            <div class="hero-floating-card hero-float-card-1">
+              <span class="float-icon">{'&lt;/'&gt;</span>
+              <div>
+                <strong>Programming</strong>
+                <small>Hands-on coding</small>
+              </div>
+            </div>
+            <div class="hero-floating-card hero-float-card-2">
+              <span class="float-icon">AI</span>
+              <div>
+                <strong>AI / ML</strong>
+                <small>Future-ready skills</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-wave" aria-hidden="true">
+          <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 60C240 100 480 100 720 70C960 40 1200 40 1440 60V100H0V60Z" fill="var(--bg-body)"/>
+          </svg>
+        </div>
+      </section>
+
+      <!-- ============================== ABOUT ============================== -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Who We Are</span>
+            <h2 class="section-title">About SmartLearn</h2>
+          </div>
+
+          <div class="about-intro reveal">
+            <p>
+              SmartLearn is a student-focused learning initiative created to help learners develop
+              practical technology skills and become confident in their careers.
+            </p>
+            <p>
+              We focus on simple explanations, practical learning, hands-on activities and real-world
+              projects so students can move from learning concepts to actually building things.
+            </p>
+          </div>
+
+          <div class="feature-grid feature-grid-3">
+            <article class="feature-card reveal" data-delay="0">
+              <div class="feature-card-icon icon-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </div>
+              <h3 class="feature-card-title">Practical Learning</h3>
+              <p class="feature-card-text">Learn by doing with hands-on examples and projects.</p>
+            </article>
+
+            <article class="feature-card reveal" data-delay="100">
+              <div class="feature-card-icon icon-green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-4V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v3H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M10 7V5h4v2"/></svg>
+              </div>
+              <h3 class="feature-card-title">Career-Focused Skills</h3>
+              <p class="feature-card-text">Develop skills that are useful for internships, jobs and real-world projects.</p>
+            </article>
+
+            <article class="feature-card reveal" data-delay="200">
+              <div class="feature-card-icon icon-amber">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <h3 class="feature-card-title">Student-Friendly Training</h3>
+              <p class="feature-card-text">Learn complex technology concepts through simple and structured training.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== COURSES ============================== -->
+      <section id="courses" class="section section-alt">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Our Courses</span>
+            <h2 class="section-title">What We Teach</h2>
+            <p class="section-subtitle">Build your technology skills step by step.</p>
+          </div>
+
+          <!-- Category: Programming -->
+          <div class="course-category reveal">
+            <div class="course-category-header">
+              <span class="course-category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </span>
+              <h3 class="course-category-title">Programming</h3>
+              <span class="course-category-count">4 courses</span>
+            </div>
+          </div>
+          <div class="course-grid course-grid-4">
+            <article class="course-card reveal">
+              <div class="course-card-top course-bg-c">
+                <span class="course-icon-large">C</span>
+              </div>
+              <div class="course-card-body">
+                <h3 class="course-name">C Programming</h3>
+                <p class="course-desc">Master the fundamentals of programming with the powerful C language.</p>
+                <button class="course-link" type="button">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              </div>
+            </article>
+
+            <article class="course-card reveal">
+              <div class="course-card-top course-bg-cpp">
+                <span class="course-icon-large">C++</span>
+              </div>
+              <div class="course-card-body">
+                <h3 class="course-name">C++ Programming</h3>
+                <p class="course-desc">Learn object-oriented programming and build strong software foundations.</p>
+                <button class="course-link" type="button">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              </div>
+            </article>
+
+            <article class="course-card reveal">
+              <div class="course-card-top course-bg-python">
+                <span class="course-icon-large">Py</span>
+              </div>
+              <div class="course-card-body">
+                <h3 class="course-name">Python</h3>
+                <p class="course-desc">Learn Python programming from fundamentals to practical applications.</p>
+                <button class="course-link" type="button">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              </div>
+            </article>
+
+            <article class="course-card reveal">
+              <div class="course-card-top course-bg-java">
+                <span class="course-icon-large">Ja</span>
+              </div>
+              <div class="course-card-body">
+                <h3 class="course-name">Java</h3>
+                <p class="course-desc">Build robust applications with one of the most in-demand languages.</p>
+                <button class="course-link" type="button">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Category: Data & AI -->
+          <div class="course-category reveal">
+            <div class="course-category-header">
+              <span class="course-category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 6-10"/></svg>
+              </span>
+              <h3 class="course-category-title">Data &amp; AI</h3>
+              <span class="course-category-count">4 courses</span>
+            </div>
+          </div>
+          <div class="course-grid course-grid-4">
+            <article class="course-card reveal">
+              <div class="course-card-top course-bg-sql">
+                <span class="course-icon-large">SQL</span>
+              </div>
+              <div class="course-card-body">
+                <h3 class="course-name">SQL</h3>
+                <p class="course-desc">Learn to manage and query databases using structured query language.</p>
+                <button class="course-link" type="button">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              </div>
+            </article>
+
+            <article class="course-card reveal">
+              <div class="course-card-top course-bg-ds">
+                <span class="course-icon-large">DS</span>
+              </div>
+              <div class="course-card-body">
+                <h3 class="course-name">Data Science</h3>
+                <p class="course-desc">Learn data analysis, visualization and machine learning fundamentals.</p>
+                <button class="course-link" type="button">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              </div>
+            </article>
+
+            <article class="course-card reveal">
+              <div class="course-card-top course-bg-ml">
+                <span class="course-icon-large">ML</span>
+              </div>
+              <div class="course-card-body">
+                <h3 class="course-name">Machine Learning</h3>
+                <p class="course-desc">Understand ML concepts and build practical machine learning models.</p>
+                <button class="course-link" type="button">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              </div>
+            </article>
+
+            <article class="course-card reveal">
+              <div class="course-card-top course-bg-dl">
+                <span class="course-icon-large">DL</span>
+              </div>
+              <div class="course-card-body">
+                <h3 class="course-name">Deep Learning</h3>
+                <p class="course-desc">Dive into neural networks and build advanced AI models.</p>
+                <button class="course-link" type="button">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Category: Development & Cloud -->
+          <div class="course-category reveal">
+            <div class="course-category-header">
+              <span class="course-category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+              </span>
+              <h3 class="course-category-title">Development &amp; Cloud</h3>
+              <span class="course-category-count">4 courses</span>
+            </div>
+          </div>
+          <div class="course-grid course-grid-4">
+            <article class="course-card reveal">
+              <div class="course-card-top course-bg-mongo">
+                <span class="course-icon-large">M</span>
+              </div>
+              <div class="course-card-body">
+                <h3 class="course-name">MongoDB</h3>
+                <p class="course-desc">Explore NoSQL databases and learn to work with flexible document-based data.</p>
+                <button class="course-link" type="button">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              </div>
+            </article>
+
+            <article class="course-card reveal">
+              <div class="course-card-top course-bg-web">
+                <span class="course-icon-large course-icon-code" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+              </div>
+              <div class="course-card-body">
+                <h3 class="course-name">Web Development</h3>
+                <p class="course-desc">Build modern, responsive websites and web applications from scratch.</p>
+                <button class="course-link" type="button">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              </div>
+            </article>
+
+            <article class="course-card reveal">
+              <div class="course-card-top course-bg-bi">
+                <span class="course-icon-large">BI</span>
+              </div>
+              <div class="course-card-body">
+                <h3 class="course-name">Power BI</h3>
+                <p class="course-desc">Create interactive dashboards and transform data into insights.</p>
+                <button class="course-link" type="button">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              </div>
+            </article>
+
+            <article class="course-card reveal">
+              <div class="course-card-top course-bg-cloud">
+                <span class="course-icon-large" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 1 0 0-9h-1.8A7 7 0 1 0 4 14"/></svg></span>
+              </div>
+              <div class="course-card-body">
+                <h3 class="course-name">Cloud Computing</h3>
+                <p class="course-desc">Learn cloud platforms, deployment and scalable infrastructure concepts.</p>
+                <button class="course-link" type="button">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== WHY SMARTLEARN ============================== -->
+      <section id="why" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Why Us</span>
+            <h2 class="section-title">Why Choose SmartLearn?</h2>
+          </div>
+
+          <div class="why-grid">
+            <article class="why-card reveal">
+              <div class="why-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              </div>
+              <h3 class="why-title">Beginner Friendly</h3>
+              <p class="why-text">Start from zero — no prior experience needed to begin your journey.</p>
+            </article>
+
+            <article class="why-card reveal" data-delay="80">
+              <div class="why-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              </div>
+              <h3 class="why-title">Practical Training</h3>
+              <p class="why-text">Every concept is paired with real examples and guided exercises.</p>
+            </article>
+
+            <article class="why-card reveal" data-delay="160">
+              <div class="why-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              </div>
+              <h3 class="why-title">Hands-on Projects</h3>
+              <p class="why-text">Apply what you learn by building projects that matter.</p>
+            </article>
+
+            <article class="why-card reveal" data-delay="0">
+              <div class="why-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              </div>
+              <h3 class="why-title">Structured Learning</h3>
+              <p class="why-text">Follow a clear, step-by-step path from basics to advanced topics.</p>
+            </article>
+
+            <article class="why-card reveal" data-delay="80">
+              <div class="why-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              </div>
+              <h3 class="why-title">Career-Oriented Skills</h3>
+              <p class="why-text">Build a skill set that's relevant for internships, jobs and projects.</p>
+            </article>
+
+            <article class="why-card reveal" data-delay="160">
+              <div class="why-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              </div>
+              <h3 class="why-title">Course Completion Certificate</h3>
+              <p class="why-text">Earn a certificate upon successfully completing your course.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== HOW IT WORKS ============================== -->
+      <section id="process" class="section section-alt">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Learning Process</span>
+            <h2 class="section-title">How SmartLearn Works</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-line" aria-hidden="true"></div>
+
+            <div class="timeline-step reveal">
+              <div class="timeline-number">01</div>
+              <div class="timeline-content">
+                <div class="timeline-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </div>
+                <h3 class="timeline-title">Choose Your Course</h3>
+                <p class="timeline-text">Pick from our range of technology courses based on your interest.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step reveal">
+              <div class="timeline-number">02</div>
+              <div class="timeline-content">
+                <div class="timeline-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20l9-9-3-3-9 9v3h3z"/><path d="M14 4l3 3"/></svg>
+                </div>
+                <h3 class="timeline-title">Learn the Concepts</h3>
+                <p class="timeline-text">Understand core ideas through simple, structured explanations.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step reveal">
+              <div class="timeline-number">03</div>
+              <div class="timeline-content">
+                <div class="timeline-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6M15 2v6M9 22v-6M15 22v-6M2 9h6M2 15h6M22 9h-6M22 15h-6"/><circle cx="12" cy="12" r="3"/></svg>
+                </div>
+                <h3 class="timeline-title">Practice with Examples</h3>
+                <p class="timeline-text">Reinforce your understanding with guided, hands-on exercises.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step reveal">
+              <div class="timeline-number">04</div>
+              <div class="timeline-content">
+                <div class="timeline-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M10 13l2 2 4-4"/></svg>
+                </div>
+                <h3 class="timeline-title">Build Projects</h3>
+                <p class="timeline-text">Apply your skills by creating real-world, functional projects.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step reveal">
+              <div class="timeline-number">05</div>
+              <div class="timeline-content">
+                <div class="timeline-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M8.5 12.5L7 22l5-3 5 3-1.5-9.5"/></svg>
+                </div>
+                <h3 class="timeline-title">Complete the Course &amp; Receive Certificate</h3>
+                <p class="timeline-text">Finish your training and earn your SmartLearn completion certificate.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== CERTIFICATE ============================== -->
+      <section id="certificate" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Certification</span>
+            <h2 class="section-title">Earn Your Certificate</h2>
+          </div>
+
+          <div class="cert-grid">
+            <div class="cert-content reveal">
+              <p class="cert-text">
+                Successfully complete your course and receive a SmartLearn Course Completion
+                Certificate — a recognition of your dedication and newly acquired skills.
+              </p>
+              <ul class="cert-list">
+                <li><span class="cert-check">✓</span> Digital certificate upon course completion</li>
+                <li><span class="cert-check">✓</span> Showcases your practical technology skills</li>
+                <li><span class="cert-check">✓</span> Shareable on your portfolio and profiles</li>
+              </ul>
+              <button class="btn btn-primary btn-lg" id="view-certificate-btn" type="button">View Sample Certificate</button>
+            </div>
+
+            <div class="cert-preview reveal" data-delay="150">
+              <div class="cert-mockup">
+                <div class="cert-mockup-border">
+                  <div class="cert-mockup-inner">
+                    <div class="cert-mockup-pattern" aria-hidden="true"></div>
+                    <div class="cert-mockup-header">
+                      <div class="cert-mockup-brand">
+                        <span class="cert-mockup-brand-icon" aria-hidden="true">
+                          <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 2L26 8L14 14L2 8L14 2Z" fill="currentColor"/>
+                            <path d="M5 11.5V18C5 18 8 21 14 21C20 21 23 18 23 18V11.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M26 8V15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                          </svg>
+                        </span>
+                        <span class="cert-mockup-brand-text">SmartLearn</span>
+                      </div>
+                      <div class="cert-mockup-seal" aria-hidden="true">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="2"/>
+                          <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+                          <path d="M21 32l8 8l14-16" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="cert-mockup-divider" aria-hidden="true"></div>
+                    <p class="cert-mockup-eyebrow">Certificate of Completion</p>
+                    <p class="cert-mockup-subtitle">This certifies that</p>
+                    <p class="cert-mockup-name">Student Name</p>
+                    <div class="cert-mockup-name-line" aria-hidden="true"></div>
+                    <p class="cert-mockup-course-label">has successfully completed</p>
+                    <p class="cert-mockup-course-name">Course Name</p>
+                    <div class="cert-mockup-footer">
+                      <div class="cert-mockup-sign">
+                        <div class="cert-mockup-signature" aria-hidden="true">
+                          <svg viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20C15 5 20 5 22 15C24 25 28 25 30 18C35 8 40 22 45 15C50 8 55 20 60 14C70 4 75 18 80 12C85 8 90 16 95 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+                          </svg>
+                        </div>
+                        <div class="cert-mockup-line"></div>
+                        <span>Course Instructor</span>
+                      </div>
+                      <div class="cert-mockup-sign">
+                        <div class="cert-mockup-stamp">SL</div>
+                        <span>SmartLearn</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== WEBINARS ============================== -->
+      <section id="webinars" class="section section-alt">
+        <div class="container">
+          <div class="webinars-grid">
+            <div class="webinars-content reveal">
+              <span class="section-eyebrow">Events &amp; Webinars</span>
+              <h2 class="section-title">Learn Beyond the Classroom</h2>
+              <p class="webinars-text">
+                Join our free webinars and workshops to explore trending technologies, career
+                opportunities and practical skills. It's a great way to stay updated and connect
+                with the wider SmartLearn community.
+              </p>
+              <a href="#contact" class="btn btn-primary btn-lg">Explore Upcoming Events</a>
+            </div>
+
+            <div class="webinars-image reveal" data-delay="150">
+              <img
+                src="https://images.pexels.com/photos/6285272/pexels-photo-6285272.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                alt="Person participating in an online webinar using a laptop"
+                loading="lazy"
+                width="940"
+                height="650"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== CONTACT ============================== -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Get In Touch</span>
+            <h2 class="section-title">Let's Start Learning</h2>
+            <p class="section-subtitle">Have a question about our courses or upcoming programs? Get in touch with us.</p>
+          </div>
+
+          <div class="contact-grid">
+            <a href="mailto:smartlearn.skillplatform@gmail.com" class="contact-card reveal" data-delay="0">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">smartlearn.skillplatform@gmail.com</span>
+              </div>
+              <span class="contact-action">Email Us →</span>
+            </a>
+
+            <a href="https://wa.me/917010380412" class="contact-card reveal" data-delay="100" target="_blank" rel="noopener">
+              <div class="contact-card-icon contact-icon-whatsapp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-label">WhatsApp</span>
+                <span class="contact-value">+91 7010380412</span>
+              </div>
+              <span class="contact-action">WhatsApp Us →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================== FOOTER ============================== -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo footer-logo">
+            <span class="nav-logo-icon" aria-hidden="true">
+              <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2L26 8L14 14L2 8L14 2Z" fill="currentColor"/>
+                <path d="M5 11.5V18C5 18 8 21 14 21C20 21 23 18 23 18V11.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26 8V15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span class="nav-logo-text">Smart<span class="accent">Learn</span></span>
+          </a>
+          <p class="footer-tagline">LEARN TODAY <span class="badge-divider">|</span> BUILD TOMORROW.</p>
+          <p class="footer-desc">Empowering students with practical technology skills for a better future.</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#certificate">Certificate</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Courses</h4>
+          <ul class="footer-links">
+            <li><a href="#courses">Programming</a></li>
+            <li><a href="#courses">Data Science</a></li>
+            <li><a href="#courses">Machine Learning</a></li>
+            <li><a href="#courses">Web Development</a></li>
+            <li><a href="#courses">Cloud Computing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links footer-contact">
+            <li><a href="mailto:smartlearn.skillplatform@gmail.com">smartlearn.skillplatform@gmail.com</a></li>
+            <li><a href="https://wa.me/917010380412" target="_blank" rel="noopener">WhatsApp: +91 7010380412</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2026 SmartLearn. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================== CERTIFICATE MODAL ============================== -->
+    <div class="modal-overlay" id="cert-modal" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title" aria-hidden="true">
+      <div class="modal-content">
+        <button class="modal-close" id="cert-modal-close" aria-label="Close certificate preview">&times;</button>
+        <h3 id="cert-modal-title" class="modal-title">Sample Certificate</h3>
+        <div class="modal-cert-wrapper">
+          <div class="cert-mockup cert-mockup-large">
+            <div class="cert-mockup-border">
+              <div class="cert-mockup-inner">
+                <div class="cert-mockup-pattern" aria-hidden="true"></div>
+                <div class="cert-mockup-header">
+                  <div class="cert-mockup-brand">
+                    <span class="cert-mockup-brand-icon" aria-hidden="true">
+                      <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 2L26 8L14 14L2 8L14 2Z" fill="currentColor"/>
+                        <path d="M5 11.5V18C5 18 8 21 14 21C20 21 23 18 23 18V11.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M26 8V15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </span>
+                    <span class="cert-mockup-brand-text">SmartLearn</span>
+                  </div>
+                  <div class="cert-mockup-seal" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="2"/>
+                      <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+                      <path d="M21 32l8 8l14-16" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="cert-mockup-divider" aria-hidden="true"></div>
+                <p class="cert-mockup-eyebrow">Certificate of Completion</p>
+                <p class="cert-mockup-subtitle">This certifies that</p>
+                <p class="cert-mockup-name">Student Name</p>
+                <div class="cert-mockup-name-line" aria-hidden="true"></div>
+                <p class="cert-mockup-course-label">has successfully completed</p>
+                <p class="cert-mockup-course-name">Course Name</p>
+                <div class="cert-mockup-footer">
+                  <div class="cert-mockup-sign">
+                    <div class="cert-mockup-signature" aria-hidden="true">
+                      <svg viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 20C15 5 20 5 22 15C24 25 28 25 30 18C35 8 40 22 45 15C50 8 55 20 60 14C70 4 75 18 80 12C85 8 90 16 95 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+                      </svg>
+                    </div>
+                    <div class="cert-mockup-line"></div>
+                    <span>Course Instructor</span>
+                  </div>
+                  <div class="cert-mockup-sign">
+                    <div class="cert-mockup-stamp">SL</div>
+                    <span>SmartLearn</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to top -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
